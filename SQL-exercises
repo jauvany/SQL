@@ -28,4 +28,15 @@ Use the DISTINCT statement to return the unique values of mentioned column.
 SELECT DISTINCT checks FROM Operation;
 
 #03
+Sorting Results
+
+
+Six players have competed in a chess tournament and their scores have been tallied.
+Here is the table of Players:
+
+Sort the players by losses to derive the leaderboard.
+Recall the ORDER BY keyword.
+
+-- Solution
+
 
