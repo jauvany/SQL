@@ -1,0 +1,14 @@
+#01
+Problem
+Selecting Multiple Columns
+
+
+When buying food, it is important to make sure it is fresh and not expired.
+You are given the following 'Products' list:contentImageWrite a query to select the ProductName, ProductionDate and ExpirationDate.
+Use the SELECT statement and separate the required columns by commas.
+
+-- Solution 
+
+SELECT ProductName, productionDate, ExpirationDate FROM products;
+
+#02
