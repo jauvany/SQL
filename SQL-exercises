@@ -12,3 +12,20 @@ Use the SELECT statement and separate the required columns by commas.
 SELECT ProductName, productionDate, ExpirationDate FROM products;
 
 #02
+Problem
+The DISTINCT Keyword
+
+
+At the conclusion of a bank transaction, 6 checks are printed -- 3 originals for the bank, and 3 copies for the customer.
+Here is the list of all the checks named Operation
+
+Write a query to show only the unique checks that are given to the customer.
+Use the DISTINCT statement to return the unique values of mentioned column.
+
+-- SOLUTION
+
+/* table name: Operation */
+SELECT DISTINCT checks FROM Operation;
+
+#03
+
