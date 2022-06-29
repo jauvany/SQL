@@ -38,5 +38,22 @@ Sort the players by losses to derive the leaderboard.
 Recall the ORDER BY keyword.
 
 -- Solution
+?
+
+#04
+Problem
+Logical Operators
+
+
+You are given the following films table with details about superhero movies:
+
+Write a query to output the names of all of the films which were produced by Marvel Studios in 2010 or later, sorted by the 'name' column.
+Use the AND operator to combine two or more conditions.
+
+-- SOLUTION
+SELECT name FROM films WHERE production = 'Marvel Studios' and year >= 2010 ORDER BY name;
+
+#05
+
 
 
