@@ -55,5 +55,20 @@ SELECT name FROM films WHERE production = 'Marvel Studios' and year >= 2010 ORDE
 
 #05
 
+Problem
+The IN Operator
+
+
+You are sorting football teams by leagues and given the following table named teams.
+
+Write a query to output the team names and the countries of all teams that have played in La Liga (Spain), Premier League (England) and Bundesliga (Germany)․
+Use the IN operator.
+
+-- SOLUTION
+
+SELECT teamname, country FROM teams WHERE country IN('Spain', 'England', 'Germany');
+
+
+#06
 
 
