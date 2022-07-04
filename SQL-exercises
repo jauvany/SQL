@@ -70,5 +70,14 @@ SELECT teamname, country FROM teams WHERE country IN('Spain', 'England', 'German
 
 
 #06
+Apartments
+You want to rent an apartment and have the following table named Apartments:
+Write a query to output the apartments whose prices are greater than the average and are also not rented, sorted by the 'Price' column.
+Recall the AVG keyword.
+
+--- SOLUTION
+SELECT * FROM Apartments WHERE price > (SELECT AVG(price) FROM apartments) ORDER BY price;
+
+#07
 
 
