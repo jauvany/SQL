@@ -89,6 +89,23 @@ SELECT * FROM Apartments WHERE price > (SELECT AVG(price) FROM apartments) ORDER
 #11
 
 #12
+Problem
+INNER JOIN
+
+You are working at a supermarket and you need to arrange products by categories. You are given the following tables:
+
+products:contentImagecategories:contentImageEach product has a category.
+Write a query to output all products with their categories (productname-price-categoryname) in one table.
+Don't forget about the ON keyword while using INNER JOIN.
+
+--- SOLUTION 
+
+SELECT products.productname, products.price,
+categories.categoryname
+
+FROM products INNER JOIN categories
+
+ON products.categoryid = categories.id
 
 #13
 Problem
