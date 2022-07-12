@@ -91,7 +91,21 @@ SELECT * FROM Apartments WHERE price > (SELECT AVG(price) FROM apartments) ORDER
 #12
 
 #13
+Problem
+UNION
 
+FIDE wants to hold a major chess tournament and has decided to include players from the Norway Chess and Tata Steel tournaments.
+Table NorwayChesscontentImageTable TataSteelcontentImage
+Write a query to merge 'NorwayChess' and 'TataSteel' tables. Then order the merged table by 'Rating' in descending order and show the final table of participants.
+Remember, you need to get a table without duplicates.
+
+--- SOLUTION
+
+SELECT player, country, birthyear, rating FROM 
+norwaychess
+UNION
+SELECT player, country, birthyear, rating FROM
+tatasteel ORDER BY rating DESC;
 
 #14
 Problem
