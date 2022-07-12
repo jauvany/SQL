@@ -80,6 +80,18 @@ SELECT * FROM Apartments WHERE price > (SELECT AVG(price) FROM apartments) ORDER
 
 #07
 
+#08
+
+#09
+
+#10
+
+#11
+
+#12
+
+#13
+
 
 #14
 Problem
