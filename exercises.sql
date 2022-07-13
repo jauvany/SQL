@@ -87,7 +87,21 @@ SELECT * FROM Apartments WHERE price > (SELECT AVG(price) FROM apartments) ORDER
 #10
 
 #11
+Problem
+Joining Tables
 
+
+You are given the following students and teachers tables
+students (with their teachers ID's):contentImageteachers:contentImageWrite a query to output all of the students with their teachers' last names in one table, sorted by students ID.
+The column with teachers' last names should be named "teacher" -- recall the AS keyword.
+
+---solution
+SELECT students.id, students.firstname, students.lastName, teachers.lastname 
+As teacher
+FROM students, teachers
+WHERE  students.teacherID=Teachers.ID
+ORDER BY students.ID;        
+          
 #12
 Problem
 INNER JOIN
