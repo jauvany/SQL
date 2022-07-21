@@ -80,9 +80,18 @@ SELECT * FROM Apartments WHERE price > (SELECT AVG(price) FROM apartments) ORDER
 
 #07
 
+
 #08
 
 #09
+AVG
+
+You are given the following table sam_grades, which shows Sam’s exam scores.contentImageWrite a query to output the average of Sam's exam scores for the first semester.
+Use the AVG() function!
+
+"""SOLUTION"""
+
+SELECT AVG(score) FROM sam_grades WHERE semester = 1;
 
 #10
 
