@@ -224,3 +224,35 @@ SELECT * FROM Leaderboard
 #17
 
 #18
+
+#19
+
+#20
+
+#21
+Zoo
+You manage a zoo. Each animal in the zoo comes from a different country. Here are the tables you have:
+AnimalscontentImageCountriescontentImage1) A new animal has come in, with the following details:
+name - "Slim", type - "Giraffe", country_id - 1
+Add him to the Animals table.
+2) You want to make a complete list of the animals for the zoo’s visitors. Write a query to output a new table with each animal's name, type and country fields, sorted by countries.
+Recall INSERT and INNER JOIN keywords.
+
+-- SOLUTION -- 
+
+/* name - "Slim", type - "Giraffe", country_id - 1 */
+
+insert into animals values
+('Slim','Giraffe',1);
+
+SELECT initcap(a.name) as name, initcap(a.type) as type,
+CASE
+when a.country_id=3 then initcap('India')
+when a.country_id=2 then initcap('Russia')
+when a.country_id=1 then upper('USA')
+END 
+AS country
+FROM Animals AS a inner join Countries AS c
+on a.country_id=c.id
+order by c.country Asc;
+
